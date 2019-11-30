@@ -17,13 +17,15 @@ a {
 
 body {
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
+    display: flex;
 }
 
 .side-bar {
     width: 16%;
-    height: 100%;
+    height: 100vh;
     background: brown;
+    position: fixed;
 }
 
 .side-bar ul {
@@ -35,7 +37,7 @@ body {
 
 .side-bar li {
     width: 100%;
-    text-align: center;
+    /* text-align: center; */
     margin-bottom: 10px;
 }
 
@@ -45,6 +47,7 @@ display: inline-block;
 background: green;
 padding: 10px;
 /* border-left:  */
+padding-left: 50px;
 }
 
 .nav-featured {
@@ -56,7 +59,140 @@ padding: 10px;
 }
 
 .icons {
-    /* margin-left: 15px;
-    margin-right: 15px; */
+    /* margin-left: 15px; */
+    margin-right: 15px;
 }
 
+/* .no-icon {
+    padding-left: 65px;
+} */
+
+.main {
+    width: 86%;
+    height: 100%;
+    background: pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 16%;
+}
+
+.search-bar {
+    width: 100%;
+    height: 55px;
+    background: black;
+    display: flex;
+    position: fixed;
+    margin-left: 16%;
+    z-index: 9999;
+}
+
+.search-bar-icons {
+    display: block;
+    width: 5%;
+    /* background:blue; */
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+.search {
+    width: 100%;
+    height: 100%;
+    background: black;
+    color: #fff;
+    border: none;
+}
+
+form {
+    flex: 1;
+    background:orange;
+}
+
+.profile-icon {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background:red;
+    text-align: center;
+    border-radius: 100%;
+    padding: 15px;
+    margin-right: 15px;
+}
+
+.recommendation {
+    width: 80%;
+    /* height: 650px; */
+    background: blueviolet;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.card-title {
+    padding: 10px;
+}
+
+.card-section {
+    width: 100%;
+    /* height: 450px; */
+    background: darkorange;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.card {
+    width: 258px;
+    /* height: 300px; */
+    background: darkolivegreen;
+    /* border-radius: 4px; */
+    
+}
+
+.card-image {
+    width: 100%;
+    height: 258px;
+    border-radius: 4px;
+    background: darkred;
+    position: relative;
+}
+
+.play-icon {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    text-align: center;
+    padding-top: 15px;
+    border-radius: 50%;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    margin-top: -25px; 
+    margin-left: -25px;
+}
+
+.song-title {
+    margin-top: 10px;
+}
+
+.footer {
+    width: 100%;
+    position: fixed;
+    height: 100px;
+    background: yellow;
+    bottom: 0;
+    z-index: 88888;
+}
+
+.media-section-one {
+    width: 10%;
+    background: blue;
+    height: 100%;
+    display: flex;
+}
+media-section-two {
+    width: 80%;
+    height: 100%;
+    background: pink;
+}
