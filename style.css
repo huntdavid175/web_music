@@ -79,12 +79,12 @@ padding-left: 50px;
 }
 
 .search-bar {
-    width: 100%;
+    width: 84%;
     height: 55px;
     background: black;
     display: flex;
     position: fixed;
-    margin-left: 16%;
+    /* margin-left: 16%; */
     z-index: 9999;
 }
 
@@ -195,4 +195,85 @@ media-section-two {
     width: 80%;
     height: 100%;
     background: pink;
+}
+
+.footer {
+    width: 100%;
+    position: fixed;
+    height: 80px;
+    background: yellow;
+    bottom: 0;
+    z-index: 88888;
+    display: flex
+}
+
+.media-section-one {
+    width: 30%;
+    height: 100%;
+    background: blueviolet;
+    display: flex;
+    padding: 15px;
+}
+
+.media-section-two {
+    width: 40%;
+    height: 100%;
+    background: blue;
+}
+
+.current-song-cover {
+    width: 80px;
+    height: 60px;
+    background: coral;
+}
+
+.track-text {
+    padding: 3px;
+    font-size: 12px;
+    margin-top: 4px;
+    margin-left: 10px;
+}
+
+.audio-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.audio-range {
+    width: 400px;
+    align-self: center;
+    margin-top: 7px;
+}
+
+.audio-controls {
+    display: flex;
+    align-self: center;
+    /* justify-content: space-around; */
+}
+
+.control-play {
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    text-align: center;
+    padding-top: 9px;
+    padding-left: 2px;
+    border-radius: 50%;
+    margin-top: -5px;
+ 
+}
+
+.audio-controls li {
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+.range-section {
+    display: flex;
+    justify-content: center;
+}
+
+.range-section span {
+    margin-top: 7px;
+    padding: 10px;
 }
