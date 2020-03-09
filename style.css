@@ -19,6 +19,7 @@ body {
     width: 100%;
     /* height: 100vh; */
     display: flex;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .side-bar {
@@ -27,6 +28,7 @@ body {
     background: #191922;
     position: fixed;
     color: #fff;
+    border-right: 0.1px solid #374756;
 }
 
 .side-bar ul {
@@ -88,6 +90,7 @@ color: #fff;
     justify-content: space-between;
     align-items: center;
     margin-left: 16%;
+    color: #fff;
 }
 
 .search-bar {
@@ -98,6 +101,7 @@ color: #fff;
     position: fixed;
     /* margin-left: 16%; */
     z-index: 9999;
+    border-bottom: 0.1px solid #374756;
 }
 
 .search-bar-icons {
@@ -136,7 +140,7 @@ form {
 .recommendation {
     width: 95%;
     /* height: 650px; */
-    background: blueviolet;
+    /* background: blueviolet; */
     padding: 20px;
     margin-top: 40px;
 }
@@ -148,7 +152,7 @@ form {
 .card-section {
     width: 100%;
     /* height: 450px; */
-    background: darkorange;
+    /* background: darkorange; */
     display: flex;
     justify-content: space-around;
     padding: 10px;
@@ -157,7 +161,7 @@ form {
 .card {
     width: 23.5%;
     /* height: 300px; */
-    background: darkolivegreen;
+    /* background: darkolivegreen; */
     /* border-radius: 4px; */
     
 }
@@ -170,14 +174,19 @@ form {
     justify-content: center;
     align-items: center;
     align-content: center;
+    border-radius: 5px;
 }
 
 .card-image {
     width: 100%;
     height: 258px;
     border-radius: 4px;
-    background: darkred;
+    /* background: darkred; */
     position: relative;
+    background-image: url("images/deez.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .play-icon {
