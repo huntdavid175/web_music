@@ -17,16 +17,16 @@ a {
 
 body {
     width: 100%;
-    height: 100vh;
-    position: relative;
+    /* height: 100vh; */
+    display: flex;
 }
 
 .side-bar {
-    /* position: fixed; */
-    max-width: 250px;
-    height: 100%;
-    background: brown;
-    left:0;
+    width: 16%;
+    height: 100vh;
+    background: #000;
+    position: fixed;
+    color: #fff;
 }
 
 .side-bar ul {
@@ -34,20 +34,32 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 
 .side-bar li {
     width: 100%;
-    text-align: center;
-    margin-bottom: 10px;
+    /* text-align: center; */
+    /* margin-bottom: 10px; */
 }
 
+
 .side-bar li a {
-width: 100%;
+width: 95%;
 display: inline-block;
-background: green;
+/* background: green; */
 padding: 10px;
 /* border-left:  */
+padding-left: 50px;
+color: #fff;
+}
+
+.active {
+    background-color: #282828;
+}
+
+.first-nav {
+    margin-top: 50px;
 }
 
 .nav-featured {
@@ -59,7 +71,237 @@ padding: 10px;
 }
 
 .icons {
-    /* margin-left: 15px;
-    margin-right: 15px; */
+    /* margin-left: 15px; */
+    margin-right: 15px;
+}
+
+/* .no-icon {
+    padding-left: 65px;
+} */
+
+.main {
+    width: 86%;
+    height: 100%;
+    background: #101010;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 16%;
+}
+
+.search-bar {
+    width: 84%;
+    height: 55px;
+    background: black;
+    display: flex;
+    position: fixed;
+    /* margin-left: 16%; */
+    z-index: 9999;
+}
+
+.search-bar-icons {
+    display: block;
+    width: 5%;
+    /* background:blue; */
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+.search {
+    width: 100%;
+    height: 100%;
+    background: black;
+    color: #fff;
+    border: none;
+}
+
+form {
+    flex: 1;
+    background:orange;
+}
+
+.profile-icon {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background:red;
+    text-align: center;
+    border-radius: 100%;
+    padding: 15px;
+    margin-right: 15px;
+}
+
+.recommendation {
+    width: 80%;
+    /* height: 650px; */
+    background: blueviolet;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.card-title {
+    padding: 10px;
+}
+
+.card-section {
+    width: 100%;
+    /* height: 450px; */
+    background: darkorange;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.card {
+    width: 258px;
+    /* height: 300px; */
+    background: darkolivegreen;
+    /* border-radius: 4px; */
+    
+}
+
+.card-image {
+    width: 100%;
+    height: 258px;
+    border-radius: 4px;
+    background: darkred;
+    position: relative;
+}
+
+.play-icon {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    text-align: center;
+    padding-top: 15px;
+    border-radius: 50%;
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    margin-top: -25px; 
+    margin-left: -25px;
+}
+
+.song-title {
+    margin-top: 10px;
+}
+
+/* .footer {
+    width: 100%;
+    position: fixed;
+    height: 100px;
+    background: yellow;
+    bottom: 0;
+    z-index: 88888;
+} */
+
+/* media-section-one {
+    width: 10%;
+    background: blue;
+    height: 100%;
+    display: flex;
+}. */
+/* media-section-two {
+    width: 80%;
+    height: 100%;
+    background: pink;
+} */
+
+.footer {
+    width: 100%;
+    position: fixed;
+    height: 80px;
+    background: #101010;
+    bottom: 0;
+    z-index: 88888;
+    display: flex;
+    color: #fff;
+    border-top: 1px solid #333;
+}
+
+.media-section-one {
+    width: 30%;
+    height: 100%;
+    /* background: #101010; */
+    display: flex;
+    padding: 15px;
+}
+
+.like-song {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.media-section-two {
+    width: 40%;
+    height: 100%;
+    /* background: #101010; */
+}
+
+.current-song-cover {
+    width: 80px;
+    height: 60px;
+    background: coral;
+}
+
+.track-text {
+    padding: 3px;
+    font-size: 12px;
+    margin-top: 4px;
+    margin-left: 10px;
+}
+
+.audio-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.audio-range {
+    width: 400px;
+    align-self: center;
+    margin-top: 7px;
+}
+
+.audio-controls {
+    display: flex;
+    align-self: center;
+    /* justify-content: space-around; */
+}
+
+.control-play {
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    text-align: center;
+    padding-top: 9px;
+    padding-left: 2px;
+    border-radius: 50%;
+    margin-top: -5px;
+ 
+}
+
+.audio-controls li {
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+.range-section {
+    display: flex;
+    justify-content: center;
+}
+
+.range-section span {
+    margin-top: 7px;
+    padding: 10px;
+}
+
+.misc {
+    justify-content: flex-end;
+}
+
+.volume-range {
+    width: 100px;
 }
 
