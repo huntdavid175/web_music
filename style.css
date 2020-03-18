@@ -57,7 +57,7 @@ color: #fff;
 }
 
 .active {
-    background-color: #282828;
+    background-color: #475695;
 }
 
 .first-nav {
@@ -91,6 +91,10 @@ color: #fff;
     align-items: center;
     margin-left: 16%;
     color: #fff;
+}
+
+i {
+    cursor: pointer;
 }
 
 .search-bar {
@@ -128,17 +132,19 @@ form {
 
 .profile-icon {
     display: block;
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     /* background:red; */
     text-align: center;
     border-radius: 100%;
     padding: 15px;
-    margin-right: 15px;
+    margin-right: 25px;
+    margin-top: 10px;
     background-image: url(images/user_profile.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 .recommendation {
@@ -163,7 +169,8 @@ form {
 }
 
 .card {
-    width: 23.5%;
+    width: 20%;
+    cursor: pointer;
     /* height: 300px; */
     /* background: darkolivegreen; */
     /* border-radius: 4px; */
@@ -194,9 +201,9 @@ form {
     border-radius: 4px;
     /* background: darkred; */
     position: relative;
-    background-image: url("images/deez.jpg");
-    background-position: center;
-    background-size: cover;
+    /* background-image: url("images/deez.jpg"); */
+    background-position: center center;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
@@ -226,33 +233,13 @@ form {
     left: 20%;
     margin-top: -25px; 
     margin-left: -25px;
+    z-index: 300;
 }
 
 .song-title {
     margin-top: 10px;
 }
-
-/* .footer {
-    width: 100%;
-    position: fixed;
-    height: 100px;
-    background: yellow;
-    bottom: 0;
-    z-index: 88888;
-} */
-
-/* media-section-one {
-    width: 10%;
-    background: blue;
-    height: 100%;
-    display: flex;
-}. */
-/* media-section-two {
-    width: 80%;
-    height: 100%;
-    background: pink;
-} */
-
+ 
 .main-bottom-space{
     width: 100%;
     height: 300px;
@@ -348,14 +335,49 @@ form {
 
 .range-section span {
     margin-top: 7px;
-    padding: 10px;
+    /* padding: 10px; */
+}
+
+.track-progress{
+    width: 400px;
+    height: 10px;
+    background-color: gray; 
+    border-radius: 5px; 
+    margin-top:12px; 
+    margin-left:5px; 
+    margin-right: 5px;
+}
+
+.progress {
+    width:60%;
+    height: 10px; 
+    background-color: #038403;; 
+    border-radius: 5px;
 }
 
 .misc {
     justify-content: flex-end;
 }
 
-.volume-range {
+.volume-progress {
     width: 100px;
+    background-color: gray; 
+    border-radius: 5px;
+    margin-top:7px;
 }
+
+/* .card-imagee {
+    width: 100%;
+    height: 258px;
+    z-index: 0000;
+    position: relative;
+}
+
+.yes{
+    width: 100%;
+    height: 258px;
+    z-index: 0;
+    position: relative;
+    border-radius: 4px;
+} */
 
